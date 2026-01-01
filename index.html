@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attractive Landing Page</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body{
+        background: linear-gradient(to right,#7F7FD5,#86A8E7,#91EAE4);
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 8%;
+    }
+    nav h2{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        transition: .3s;
+    }
+    nav ul li a:hover{
+        border-bottom: 2px solid white;
+    }
+
+    /* Hero Section */
+    .hero{
+        text-align: center;
+        padding: 90px 10% 120px;
+    }
+    .hero h1{
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    .hero p{
+        font-size: 18px;
+        margin-top: 12px;
+        opacity: 0.9;
+    }
+    .btn{
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 28px;
+        font-size: 17px;
+        background:#fff;
+        color:#333;
+        font-weight: 600;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: .3s;
+    }
+    .btn:hover{
+        transform: scale(1.07);
+        background:#ffe9b5;
+    }
+
+    /* Services Section */
+    .services{
+        background:white;
+        color:#333;
+        text-align:center;
+        padding:60px 8%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin-top:-60px;
+    }
+    .services h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .box-container{
+        display: flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap: wrap;
+        margin-top:30px;
+    }
+
+    .box{
+        background:#f7f7f7;
+        padding:25px;
+        width:260px;
+        border-radius:12px;
+        box-shadow:0 5px 20px rgba(0,0,0,0.1);
+        transition:0.3s;
+    }
+    .box:hover{
+        transform:translateY(-6px);
+    }
+    .box h3{
+        font-size: 22px;
+        margin-bottom:10px;
+        color:#444;
+    }
+
+    /* Footer */
+    footer{
+        background:#000000b0;
+        color:#fff;
+        text-align:center;
+        padding:15px;
+        margin-top:50px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2>CreativeWeb</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to Our Amazing Website</h1>
+    <p>We help you grow your digital presence with modern design and smart creativity</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="box-container">
+        <div class="box">
+            <h3>Web Design</h3>
+            <p>Beautiful layouts with responsive UI for all devices.</p>
+        </div>
+
+        <div class="box">
+            <h3>Development</h3>
+            <p>Clean and fast websites built using latest technologies.</p>
+        </div>
+
+        <div class="box">
+            <h3>Branding</h3>
+            <p>Build your brand identity with modern creative touch.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 CreativeWeb | All Rights Reserved.
+</footer>
+
+</body>
+</html>
